@@ -1,6 +1,13 @@
 /* intuitivnější box-sizing pro všechny prvky na stránce */
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
+html {
+	box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+	box-sizing: inherit;
+}
 
 
 /*
@@ -31,5 +38,42 @@ html { box-sizing: border-box; }
 
 body {
 	margin: 0;
+	font-size: 18px;
+	font-family: 'Lora', serif;
+	line-height: 1.5;
 }
 
+/* colors */
+:root {
+	--button-color: #f195b2;
+	--active-button-color: #d2567d;
+	--primary-color: #3e606b;
+	--text-color: #242424;
+	--bg-color: #f0f0f0;
+	--bg-dark-color: #303339;
+}
+
+/* fonts */
+h1 {
+	font-size: 52px;
+}
+h2{
+	font-size: 36px;
+}
+h3{
+	font-size: 18px;
+}
+h1, h2, h3{
+	line-height: 1.25;
+	font-family: 'Montserrat', sans-serif;
+}
+
+section{
+	max-width: 1100px;
+	margin: auto;
+	padding: 80px 0;
+}
+header,
+footer{
+	padding: 30px 0;
+}
