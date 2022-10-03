@@ -57,23 +57,53 @@ body {
 h1 {
 	font-size: 52px;
 }
-h2{
+
+h2 {
 	font-size: 36px;
 }
-h3{
+
+h3 {
 	font-size: 18px;
 }
-h1, h2, h3{
+
+h1,
+h2,
+h3 {
 	line-height: 1.25;
 	font-family: 'Montserrat', sans-serif;
 }
 
-section{
-	max-width: 1100px;
+section,
+.container {
 	margin: auto;
 	padding: 80px 0;
 }
+
 header,
-footer{
+footer {
 	padding: 30px 0;
+	margin: auto;
+
+}
+
+footer {
+	background-color: var(--bg-dark-color);
+	color: #fff;
+}
+
+.container {
+	max-width: 1100px;
+}
+
+/* images */
+
+.logo-img {
+	width: 170px;
+}
+
+/* detail sections */ 
+
+/* flex */
+.d-flex{
+	display: flex;
 }
