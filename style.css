@@ -36,13 +36,6 @@ html {
 */
 
 
-body {
-	margin: 0;
-	font-size: 18px;
-	font-family: 'Lora', serif;
-	line-height: 1.5;
-}
-
 /* colors */
 :root {
 	--button-color: #f195b2;
@@ -52,6 +45,15 @@ body {
 	--bg-color: #f0f0f0;
 	--bg-dark-color: #303339;
 }
+
+body {
+	margin: 0;
+	font-size: 18px;
+	font-family: 'Lora', serif;
+	line-height: 1.5;
+	color: var(--text-color);
+}
+
 
 /* fonts */
 h1 {
@@ -70,10 +72,11 @@ h1,
 h2,
 h3 {
 	line-height: 1.25;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Playfair Display', serif;
+	color: var(--primary-color);
 }
 
-section,
+
 .container {
 	margin: auto;
 	padding: 80px 0;
@@ -101,9 +104,56 @@ footer {
 	width: 170px;
 }
 
-/* detail sections */ 
+/* menu */
 
-/* flex */
-.d-flex{
+.main-menu li{
+	list-style-type: none;
+	
+	text-decoration: none;
+}
+.main-menu li a {
+	text-decoration: none;
+	padding: 10px 15px;
+	color: var(--text-color);
+
+}
+
+.main-menu li a:hover,
+.main-menu li a:focus
+ {
+	background-color: var(--button-color);
+	color: #fff;
+	border-radius: 20px;
+}
+
+/* detail sections */
+
+.hero p {
+	font-style: italic;
+}
+
+/* display */
+.d-flex {
 	display: flex;
+}
+.fl-btw {
+	justify-content: space-between;
+}
+/* colors */
+
+.bg-light {
+	background-color: var(--bg-color);
+}
+
+.btn {
+	background-color: var(--button-color);
+	padding: 15px 40px;
+	border-radius: 30px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.btn:hover,
+.btn:focus {
+	background-color: var(--active-button-color);
 }
