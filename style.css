@@ -73,6 +73,7 @@ h2,
 h3 {
 	line-height: 1.25;
 	font-family: 'Playfair Display', serif;
+	margin-top: 0;
 }
 
 .container,
@@ -129,6 +130,7 @@ footer p {
 	background-image: url(images/cupcake.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
 }
 
 .hero-text {
