@@ -87,7 +87,12 @@ footer {
 
 footer {
 	background-color: var(--bg-dark-color);
+}
+
+footer p {
 	color: #fff;
+	text-align: center;
+	margin: 0;
 }
 
 /* images */
@@ -136,6 +141,13 @@ footer {
 	font-style: italic;
 }
 
+.block img {
+	border-radius: 5px;
+	width: 50%;
+	object-fit: cover;
+
+}
+
 /* display */
 
 .p-30 {
@@ -144,7 +156,7 @@ footer {
 
 .p-80 {
 	padding: 80px 0;
-} 
+}
 
 .d-flex {
 	display: flex;
@@ -153,9 +165,12 @@ footer {
 .fl-btw {
 	justify-content: space-between;
 }
-.g-30{
+
+.g-30 {
 	gap: 30px;
 }
+
+
 /* colors */
 h2,
 h3 {
@@ -166,12 +181,16 @@ h3 {
 	background-color: var(--bg-color);
 }
 
+/* tlacitko */
 .btn {
 	background-color: var(--button-color);
 	padding: 15px 40px;
 	border-radius: 30px;
 	text-decoration: none;
 	color: #fff;
+	display: block;
+	width: fit-content;
+	margin-top: 30px;
 }
 
 .btn:hover,
@@ -179,22 +198,29 @@ h3 {
 	background-color: var(--active-button-color);
 }
 
+
 /* karticky */
 
-.card{
+.card {
 	background-color: #fff;
 	border-radius: 5px;
 	box-shadow: 0 4px 8px 0 rgba(90, 90, 90, 0.2);
 }
-.card-text{
+
+.card-text {
 	padding: 20px;
 }
-.card-text h3,
-footer p{
+
+.card-text h3 {
 	text-align: center;
 }
+
+.card-text p {
+	margin: 0
+}
+
 .card img {
 	border-radius: 5px 5px 0 0;
-    width: 100%;
-    object-fit: cover;
+	width: 100%;
+	object-fit: cover;
 }
